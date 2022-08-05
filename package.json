@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/lab": "^5.0.0-alpha.73",
+    "@mui/material": "^5.5.1",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.0",
+    "firebase": "^9.9.1",
+    "formik": "^2.2.9",
+    "formik-mui": "^4.0.0-alpha.3",
+    "@reduxjs/toolkit": "^1.8.0",
+    "formik-mui-lab": "^1.0.0-alpha.3",
+    "qs": "^6.10.3",
+    "http-status-codes": "^2.2.0",
+    "yup": "^0.32.11",
+    "react-hotkeys-hook": "^3.4.4",
+    "react-redux": "^7.2.6",
+    "recharts": "^2.1.9"
+  }
+}

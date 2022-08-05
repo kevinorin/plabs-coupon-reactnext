@@ -1,2 +1,1 @@
-# plabs-coupon-reactnext
-PrimeLabs new React/Next frontend for Coupons MVP
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
