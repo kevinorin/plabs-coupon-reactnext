@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
+// import * as CSS from "csstype";
+
 // Utilities
-import appTheme from "@theme";
+import appTheme from "../../../styles/theme";
 
 /** Page wrapper */
 export const Page = styled.div`
@@ -38,6 +40,6 @@ export const DrawerHeader = styled("div")(() => ({
   display: "flex",
   alignItems: "center",
   padding: appTheme.spacing(0, 1),
-  // ...(appTheme.mixins.toolbar as CSS.Properties),
+  ...(appTheme.mixins.toolbar),
   justifyContent: "flex-start",
 }));

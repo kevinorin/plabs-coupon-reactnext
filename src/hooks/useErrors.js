@@ -1,3 +1,4 @@
+
 // Default error that will be used when no error message is found
 const DEFAULT_ERROR_MESSAGE = "An unknown error occurred";
 

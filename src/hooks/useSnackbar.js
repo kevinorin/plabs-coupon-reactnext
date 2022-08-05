@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
 // Utilities
-import { SnackbarContext } from "@contexts";
+import { ISnackbarContext, SnackbarContext } from "../contexts";
 
 /**
  * Expose snackbar manager context as hook

@@ -2,7 +2,7 @@ import { ListItemButton, ListItemText } from "@mui/material";
 import Link from "next/link";
 
 // Utilities
-import theme from "@theme";
+import theme from "../../../styles/theme";
 
 const DrawerLink = (props) => {
   const { disabled = false, selected = false, text, to } = props;

@@ -4,6 +4,8 @@ import { createEntityAdapter, createSelector, createSlice, PayloadAction } from 
 import { resetAppAction } from "../actions";
 import { debugCampaigns } from "../data/campaigns.data";
 
+// Types
+// import { CampaignStatus, ICampaign } from "@typings/coupon.types";
 import { RootState } from "../index";
 
 export const campaignsAdapter = createEntityAdapter({
@@ -46,7 +48,7 @@ const campaignsSlice = createSlice({
 // Selectors
 ////////////////////////////////////////////////////////////////////////////////
 
-export const campaignsSelectors = campaignsAdapter.getSelectors((state) => state.campaigns);
+export const campaignsSelectors = campaignsAdapter.getSelectors<RootState>((state) => state.campaigns);
 
 export const selectCampaign = (state, id) => campaignsSelectors.selectById(state, id);
 
@@ -59,11 +61,11 @@ export const selectCampaigns = campaignsSelectors.selectAll;
  * @param   status - Status filter
  * @returns Campaigns matching provided status
  */
-export const selectCampaignsByStatus = createSelector(
-  [campaignsSelectors.selectAll, (state, status) => status],
-  (allCampaigns, status) =>
-    allCampaigns.filter((c) => (Array.isArray(status) ? status.includes(c.status) : c.status === status))
-);
+// export const selectCampaignsByStatus = createSelector(
+//   [campaignsSelectors.selectAll, (state, status) => status],
+//   (allCampaigns, status) =>
+//     allCampaigns.filter((c) => (Array.isArray(status) ? status.includes(c.status) : c.status === status))
+// );
 
 export const { addCampaign, endCampaign } = campaignsSlice.actions;
 

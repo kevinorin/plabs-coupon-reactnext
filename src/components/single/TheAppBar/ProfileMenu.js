@@ -2,15 +2,36 @@ import { Add as AddIcon } from "@mui/icons-material";
 import { Divider, ListItem, Menu, MenuItem, Typography } from "@mui/material";
 
 // Components
-import { Link } from "@components/typography";
+// import { Link } from "@components/typography";
+import { Link } from "../../typography";
 
 // Utilities
-import { getDashboardLink } from "@utils/links.util";
+// import { getDashboardLink } from "@utils/links.util";
+
+// Types
+// import { IMerchant } from "@typings/merchant.types";
+// import { IUser } from "@typings/user.types";
+
+// type Props = {
+//   /** HTML anchor element (for attachment) */
+//   anchorEl: HTMLElement | null;
+//   /** User account profile */
+//   profile: IUser;
+//   /** User merchant profile (if any) */
+//   merchantProfile: IMerchant | null;
+//   /** Whether user is viewing as merchant (or customer) */
+//   viewingAsMerchant: boolean;
+//   /** Close handler */
+//   onClose: () => void;
+//   /** Toggle merchant profile view */
+//   onToggleMerchant: (viewAsMerchant: boolean) => void;
+// };
 
 const ProfileMenu = (props) => {
   const { anchorEl, merchantProfile, profile, viewingAsMerchant, onClose, onToggleMerchant } = props;
 
-  const dashboardLink = getDashboardLink(viewingAsMerchant ? "merchant" : "customer");
+  // const dashboardLink = getDashboardLink(viewingAsMerchant ? "merchant" : "customer");
+  const dashboardLink = "/merchant"
 
   return (
     <Menu

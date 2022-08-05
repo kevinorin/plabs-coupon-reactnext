@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles';
+import styled from "@emotion/styled";
 import { CardMedia } from "@mui/material";
 
 /** Card image */
@@ -19,7 +19,7 @@ export const CardFooter = styled.div`
 `;
 
 /** Card footer merchant logo */
-export const CardFooterLogo = styled.div`
+export const CardFooterLogo = styled.div<{ size?: number }>`
   height: ${(p) => p.size ?? 40}px;
   width: ${(p) => p.size ?? 40}px;
   margin-right: 12px;

@@ -1,14 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Utilities
-import { StorageService } from "@services";
+import { StorageService } from "../../services";
 import { resetAppAction } from "../actions";
 import { AppDispatch, RootState } from "../index";
+
+// Types
+// import { IMerchant } from "@typings/merchant.types";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Slice
 ////////////////////////////////////////////////////////////////////////////////
-
 
 const initialState = {
   // merchant: null,

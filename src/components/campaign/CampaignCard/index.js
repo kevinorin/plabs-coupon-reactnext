@@ -12,6 +12,10 @@ import { useState, MouseEvent } from "react";
 // Components
 import { CouponCampaignCard } from "@components/coupon-campaign";
 
+// Types
+// import { ICampaign } from "@typings/coupon.types";
+
+
 const CampaignCard = (props) => {
   const router = useRouter();
   const { campaign, onEndCampaign, onSelect } = props;

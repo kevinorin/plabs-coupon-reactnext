@@ -4,9 +4,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../index";
 import { resetAppAction } from "../actions";
 
+// Types
+// import { IUser } from "@typings/user.types";
+
 ////////////////////////////////////////////////////////////////////////////////
 // Slice
 ////////////////////////////////////////////////////////////////////////////////
+
 
 const initialState = {
   profile: null,

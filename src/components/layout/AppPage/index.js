@@ -5,26 +5,27 @@ import { Close as CloseIcon } from "@mui/icons-material";
 import { Divider, Drawer, Grid, IconButton } from "@mui/material";
 
 // Components
-import { TheAppBar } from "@components/single";
+import { TheAppBar, TheAppDrawer } from "../../single";
 import AppPageBody from "./AppPageBody";
 import AppPageCard from "./AppPageCard";
 import AppPageSuccess from "./AppPageSuccess";
-import { TheAppDrawer } from "@components/single";
+// import { TheAppDrawer } from "../../single";
 
 // Utilities
-import { useAppSelector, useMobileBreakpoint } from "@hooks";
-import { selectViewedMerchant } from "@store/slices/merchant.slice";
+// import useMobileBreakpoint from "../../../hooks";
+// import { selectViewedMerchant } from "../../../store/slices/merchant.slice";
 
 // Styles
 import * as SC from "./index.styles";
+
 
 const AppPage = (props) => {
   const { children, hideAppBar = false, left, mainSx, tabTitle } = props;
 
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const viewedMerchant = useAppSelector(selectViewedMerchant);
-  const drawerView = viewedMerchant ? "merchant" : "customer";
-  const mobileBreakpoint = useMobileBreakpoint();
+  // const viewedMerchant = useAppSelector(selectViewedMerchant);
+  const drawerView = "merchant";
+  const mobileBreakpoint = 'useMobileBreakpoint()';
 
   const handleDrawerOpen = () => {
     setDrawerOpen(true);

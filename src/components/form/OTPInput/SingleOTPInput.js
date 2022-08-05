@@ -6,6 +6,7 @@ import * as SC from "./index.styles";
 // Utilities
 import { usePrevious } from "@hooks";
 
+
 const SingleOTPInput = (props) => {
   const { focus, ...rest } = props;
 

@@ -39,7 +39,7 @@ setYupLocale({
 // const { store } = setupStore();
 
 const App = (props) => {
-  console.log('Hello world! >>>>')
+  console.log('Hello world >>>>')
   const { Component, pageProps } = props;
 
   // NOTE: Loading state must start true to avoid unnecessarily rendering components!
