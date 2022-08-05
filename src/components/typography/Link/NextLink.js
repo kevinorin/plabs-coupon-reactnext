@@ -7,7 +7,7 @@ const Anchor = styled("a")({});
 
 
 /** Unstyled wrapper for NextJS Link */
-const NextLinkComposed = ((props, ref) => {
+const NextLinkComposed = forwardRef((props, ref) => {
   const { to, linkAs, replace, scroll, shallow, prefetch, locale, ...other } = props;
 
   return (

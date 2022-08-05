@@ -5,10 +5,6 @@ import { ReactNode } from "react";
 // Components
 import { PreviewImage, PreviewValue } from "@components/coupon-campaign/CouponCampaignPreview";
 
-// Types
-// import { ICampaign } from "@typings/coupon.types";
-
-
 const CampaignPreview = (props) => {
   const { actions, campaign } = props;
 

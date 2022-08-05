@@ -1,8 +1,6 @@
 import { useRouter } from "next/router";
 import { ChangeEvent, KeyboardEvent, useEffect, useState } from "react";
 
-
-
 /**
  * Common URL-based search state (both local and from URL)
  *

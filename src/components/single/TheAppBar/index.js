@@ -10,16 +10,15 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 // Components
-// import { Link } from "@components/typography";
-import { Link } from "../../typography";
+import { Link } from "@components/typography";
 import ProfileMenu from "./ProfileMenu";
 
 // Utilities
-import { useAppDispatch, useAppSelector } from "../../../hooks";
-import couponLogo from "/public/nft_coupon.png";
-import { selectProfile } from "../../../store/slices/user.slice";
-import { selectMerchantProfile, selectViewedMerchant, toggleMerchantView } from "../../../store/slices/merchant.slice";
-// import { getDashboardLink } from "@utils/links.util";
+import { useAppDispatch, useAppSelector } from "@hooks";
+import couponLogo from "@public/nft_coupon.png";
+import { selectProfile } from "@store/slices/user.slice";
+import { selectMerchantProfile, selectViewedMerchant, toggleMerchantView } from "@store/slices/merchant.slice";
+import { getDashboardLink } from "@utils/links.util";
 
 // Styles
 import * as SC from "./index.styles";
@@ -59,7 +58,7 @@ const TheAppBar = (props) => {
     // Redirect to user dashboard if removing the selected merchant, or the merchant
     //   dashboard when a merchant is selected.
     router.push({
-      pathname: "/merchant",
+      pathname: getDashboardLink(viewAsMerchant ? "merchant" : "customer"),
     });
 
     closeProfileMenu();
@@ -70,7 +69,7 @@ const TheAppBar = (props) => {
       <Toolbar>
         <SC.AppBarLogo>
           <Link
-            href={"/merchant"}
+            href={profile ? getDashboardLink(viewedMerchant ? "merchant" : "customer") : "/"}
             sx={{ display: "flex", zIndex: 10 }}
           >
             <Image alt="Coupon Logo" height="48" width="97" objectFit="contain" src={couponLogo} />

@@ -3,9 +3,9 @@ import { Divider, Stack } from "@mui/material";
 import { useRouter } from "next/router";
 
 // Components
-// import { LinkButton } from "@components/typography";
-import { LinkButton } from "../../typography";
+import { LinkButton } from "@components/typography";
 import DrawerLink from "./DrawerLink";
+
 
 const merchantLinks = [
   {

@@ -2,7 +2,8 @@ import Router from "next/router";
 import { useEffect } from "react";
 
 // Utilities
-import { AuthService } from "../services";
+import { AuthService } from "@services";
+
 
 /**
  * Handle authentication route guards on page mount/transition

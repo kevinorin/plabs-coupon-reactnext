@@ -2,8 +2,6 @@ import { LoadingButton } from "@mui/lab";
 import { Breakpoint, Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
 import { ReactNode } from "react";
 
-
-
 const ConfirmDialog = (props) => {
   const {
     cancelText,

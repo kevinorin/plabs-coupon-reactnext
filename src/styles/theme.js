@@ -1,4 +1,3 @@
-// import type {} from "@mui/lab/themeAugmentation";
 import { Components, createTheme, Theme } from "@mui/material/styles";
 
 const buttonOverrides = {

@@ -4,8 +4,9 @@ import Router from "next/router";
 import qs from "qs";
 
 // Utilities
-// import config from "@config";
+import config from "@config";
 import AuthService from "./auth.service";
+
 
 /**
  * Create a common Axios instance using a common config, which can be used
@@ -18,7 +19,7 @@ import AuthService from "./auth.service";
  */
 const createApiInstance = (overrides = {}) => {
   return axios.create({
-    baseURL: '',
+    baseURL: config.api.url,
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -147,7 +148,7 @@ class ApiService {
   }
 
   /** Remove Axios authentication token */
-  removeAuthToken(){
+  removeAuthToken() {
     const headers = this.api.defaults.headers;
     headers["Authorization"] = null;
   }

@@ -5,10 +5,6 @@ import dayjs from "dayjs";
 // Components
 import { PreviewImage, PreviewValue } from "@components/coupon-campaign/CouponCampaignPreview";
 
-// Types
-import { ICoupon } from "@typings/coupon.types";
-
-
 const CouponPreview = (props) => {
   const { coupon, onClaim } = props;
 

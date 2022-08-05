@@ -4,12 +4,8 @@ import { MouseEvent, useCallback } from "react";
 // Components
 import { CouponCampaignCard } from "@components/coupon-campaign";
 
-// Types
-import { ICoupon } from "@typings/coupon.types";
-
 // Styles
 import * as SC from "./index.styles";
-
 
 // TODO: Improve hardcoded styling, specifically sizing (not very responsive or well done!)
 

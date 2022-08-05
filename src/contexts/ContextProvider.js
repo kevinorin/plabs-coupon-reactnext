@@ -9,7 +9,6 @@ import React, { ReactElement, ReactNode } from "react";
 // Utilities
 import { SnackbarProvider } from "./SnackbarContext";
 
-
 /**
  * Compose Context providers together
  *

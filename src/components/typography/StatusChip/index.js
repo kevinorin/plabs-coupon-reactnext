@@ -1,8 +1,5 @@
 import { SxProps, Theme } from "@mui/material";
 
-// Types
-// import { CampaignStatus, CouponStatus } from "@typings/coupon.types";
-
 // Styles
 import * as SC from "./index.styles";
 

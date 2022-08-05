@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 // Utilities
 import { palette } from "@theme";
 
-export const Input = styled.input<{ error?: boolean }>`
+export const Input = styled.input`
   width: 3rem !important;
   height: 3rem;
   margin: 0 0.2rem;

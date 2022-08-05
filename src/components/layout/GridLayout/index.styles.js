@@ -8,7 +8,7 @@ export const GridLayoutContainer = styled(Box)`
 `;
 
 /** Inner container for grid layout applies the spacing offset (to allow parent to set margin) */
-export const GridLayoutInner = styled.div<{ }>`
+export const GridLayoutInner = styled.div`
   display: flex;
   width: 100%;
   margin: -${(p) => p.spacing ?? defaultSpacing}px;

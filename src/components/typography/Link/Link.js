@@ -13,7 +13,7 @@ import { NextLinkComposedProps } from "./NextLink";
 /**
  * An MUI styled version of the Next.js Link component
  */
-const Link = ((props, ref) => {
+const Link = forwardRef((props, ref) => {
   const {
     activeClassName = "active",
     as,

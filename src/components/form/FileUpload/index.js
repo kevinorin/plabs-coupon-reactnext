@@ -12,7 +12,6 @@ import { ACCEPTED_FILE_EXTENSIONS, validateFilesForUpload } from "@utils/file-up
 // Styles
 import { FileUploadContainer } from "./index.styles";
 
-
 const requiredFileExtensionsDescription = `${ACCEPTED_FILE_EXTENSIONS.map((extension) =>
   extension.substring(1).toUpperCase()
 )

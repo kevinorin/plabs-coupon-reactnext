@@ -3,10 +3,6 @@ import { Typography } from "@mui/material";
 // Components
 import { ConfirmDialog } from "@components/dialogs";
 
-// Types
-// import { ICoupon } from "@typings/coupon.types";
-
-
 const CouponClaimDialog = (props) => {
   const { coupon, open, onCancel, onClaim } = props;
 

@@ -9,12 +9,8 @@ import { StatusChip } from "@components/typography";
 // Utilities
 import { getHoverStyles } from "@utils/styles.util";
 
-// Types
-import { ICampaign, ICoupon } from "@typings/coupon.types";
-
 // Styles
 import * as SC from "./index.styles";
-
 
 // TODO: Improve hardcoded styling, specifically sizing (not very responsive or well done!)
 

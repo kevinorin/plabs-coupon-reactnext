@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import { styled } from '@mui/material/styles';
 
 /** Card image overlay (for centered content) */
 export const CardImageOverlay = styled.div`

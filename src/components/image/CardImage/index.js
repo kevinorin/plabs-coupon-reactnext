@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 // Styles
 import * as SC from "./index.styles";
 
-
 const CardImage = (props) => {
   const { alt, src, width = 300, height = 200, objectFit = "cover", overlay, sx } = props;
   return (

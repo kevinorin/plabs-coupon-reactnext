@@ -1,9 +1,6 @@
 // Utilities
 import ApiService from "./api.service";
 
-// Types
-// import { IUser, IUserDetailsResponse } from "@typings/user.types";
-
 class UserService {
   /** Fetch authenticated user information */
   async fetchUser(userId) {

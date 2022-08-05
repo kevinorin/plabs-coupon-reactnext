@@ -1,22 +1,10 @@
 // Utilities
-import { store } from "../store";
-import { resetAppAction } from "../store/actions";
-import { setProfile } from "../store/slices/user.slice";
+import { store } from "@store";
+import { resetAppAction } from "@store/actions";
+import { setProfile } from "@store/slices/user.slice";
 import ApiService, { createApiInstance } from "./api.service";
 import StorageService from "./storage.service";
 import { auth } from "../firebase-config";
-
-// Types
-// import {
-//   IAuthTokens,
-//   ICreateAccountDetails,
-//   ILoginCredentials,
-//   ILoginResponse,
-//   ILoginVerification,
-//   ILoginVerificationResponse,
-//   IUserTokens,
-// } from "@typings/auth.types";
-// import { IUser } from "@typings/user.types";
 
 const AUTH_TOKEN_KEY = "authToken";
 const REFRESH_TOKEN_KEY = "refreshToken";
@@ -25,7 +13,7 @@ const WALLET_ID_KEY = "walletId";
 
 class AuthService {
   /** Authentication JWT token */
-  authToken;
+  authToken = null;
   /** Authentication refresh token */
   refreshToken = null;
   /** Timeout/interval for auto-refreshing auth tokens */

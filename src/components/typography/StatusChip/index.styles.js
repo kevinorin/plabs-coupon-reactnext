@@ -2,8 +2,7 @@ import styled from "@emotion/styled";
 import { Box } from "@mui/system";
 
 /** Status chip */
-export const StatusChip = styled(Box)<{
-}>`
+export const StatusChip = styled(Box)`
   ${(p) =>
     p.absolute &&
     `
