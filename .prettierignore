@@ -1,7 +1,0 @@
-# Directories
-/.next
-/docs
-/node_modules
-
-# Files
-/package.lock.json
